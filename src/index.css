@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Nunito:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Luxurious Black & Teal Palette */
+    --background: 0 0% 5%;
+    --foreground: 180 20% 90%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 180 20% 90%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 180 20% 90%;
+
+    /* Rich Teal */
+    --primary: 180 70% 50%;
+    --primary-foreground: 0 0% 5%;
+
+    /* Muted Teal */
+    --secondary: 180 40% 30%;
+    --secondary-foreground: 180 20% 90%;
+
+    /* Dark Muted */
+    --muted: 0 0% 12%;
+    --muted-foreground: 180 15% 60%;
+
+    /* Accent Teal */
+    --accent: 175 75% 45%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 20% 90%;
+
+    --border: 180 25% 20%;
+    --input: 180 25% 20%;
+    --ring: 180 70% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Wedding Colors */
+    --rose: 180 70% 50%;
+    --rose-light: 180 60% 70%;
+    --sage: 180 50% 35%;
+    --sage-light: 180 30% 25%;
+    --gold: 180 70% 50%;
+    --gold-light: 180 60% 70%;
+    --ivory: 180 20% 90%;
+    --charcoal: 0 0% 5%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 5% / 0.1) 0%, hsl(0 0% 5% / 0.95) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(0 0% 0% / 0.5) 0%, hsl(0 0% 0% / 0.8) 100%);
+    --gradient-rose: linear-gradient(135deg, hsl(180 70% 50%) 0%, hsl(175 75% 45%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(180 50% 35%) 0%, hsl(180 60% 45%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(180 70% 50% / 0.15);
+    --shadow-medium: 0 8px 30px -8px hsl(180 70% 50% / 0.2);
+    --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.5);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 180 20% 90%;
+    --sidebar-primary: 180 70% 50%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 180 50% 35%;
+    --sidebar-accent-foreground: 180 20% 90%;
+    --sidebar-border: 180 25% 20%;
+    --sidebar-ring: 180 70% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 3%;
+    --foreground: 180 20% 92%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 180 20% 92%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 180 20% 92%;
+
+    --primary: 180 75% 55%;
+    --primary-foreground: 0 0% 3%;
+
+    --secondary: 180 40% 25%;
+    --secondary-foreground: 180 20% 92%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 180 15% 55%;
+
+    --accent: 175 80% 50%;
+    --accent-foreground: 0 0% 3%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 180 20% 92%;
+
+    --border: 180 25% 15%;
+    --input: 180 25% 15%;
+    --ring: 180 75% 55%;
+
+    --rose: 180 75% 55%;
+    --rose-light: 180 50% 35%;
+    --sage: 180 45% 30%;
+    --sage-light: 180 25% 20%;
+    --gold: 180 75% 55%;
+    --gold-light: 180 50% 35%;
+    --ivory: 180 20% 92%;
+    --charcoal: 0 0% 3%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-light text-foreground mb-4 tracking-wide;
+  }
+  
+  .section-subtitle {
+    @apply text-lg md:text-xl text-muted-foreground font-body font-light max-w-2xl mx-auto;
+  }
+  
+  .card-elegant {
+    @apply bg-card rounded-lg p-6 md:p-8 shadow-[var(--shadow-card)] border border-border/50;
+  }
+  
+  .btn-wedding {
+    @apply px-8 py-3 rounded-full font-body font-medium tracking-wide transition-all duration-300;
+  }
+  
+  .btn-primary-wedding {
+    @apply btn-wedding bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[var(--shadow-medium)];
+  }
+  
+  .btn-outline-wedding {
+    @apply btn-wedding border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+  }
+  
+  .divider-ornament {
+    @apply flex items-center justify-center gap-4 my-8;
+  }
+  
+  .divider-line {
+    @apply h-px w-16 bg-gradient-to-r from-transparent via-primary/50 to-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-delay-1 {
+    animation: fadeIn 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.7);
+}

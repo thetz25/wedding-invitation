@@ -1,0 +1,25 @@
+Step 1: Create a new Google Sheet and go to Extensions → Apps Script
+
+Step 2: Replace the code with:
+
+
+function doPost(e) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const data = JSON.parse(e.postData.contents);
+  
+  sheet.appendRow([
+    data.timestamp,
+    data.name,
+    data.email,
+    data.attendance,
+    data.guests,
+    data.message
+  ]);
+  
+  return ContentService.createTextOutput("Success");
+}
+Step 3: Click Deploy → New deployment → Web app
+
+Execute as: Me
+Who has access: Anyone
+Step 4: Copy the web app URL and paste it in src/config/wedding.ts under googleScriptUrl
