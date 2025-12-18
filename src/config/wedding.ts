@@ -94,7 +94,7 @@ export const weddingConfig = {
     title: "Dress Code",
     code: "Formal Attire",
     description: "We kindly request guests to wear formal attire. Gentlemen in suits or tuxedos, ladies in floor-length gowns or elegant cocktail dresses.",
-    colorPalette: ["Teal", "Turquoise", "Aqua", "Navy Blue"],
+    colorPalette: ["Pastel Pink", "Soft Lavender", "Mint Green", "Peach"],
     note: "Please avoid wearing white or ivory as these colors are reserved for the bride.",
   },
 
@@ -183,6 +183,23 @@ export const weddingConfig = {
     ],
   },
 
+  // Flipbook Gallery
+  flipbook: {
+    enabled: true,
+    title: "Our Photo Album",
+    subtitle: "Flip through our cherished memories",
+    images: [
+      { src: "/gallery-1.jpg", caption: "The beginning of forever" },
+      { src: "/gallery-2.jpg", caption: "Love at first sight" },
+      { src: "/gallery-3.jpg", caption: "Making memories together" },
+      { src: "/gallery-4.jpg", caption: "Every moment with you" },
+      { src: "/gallery-5.jpg", caption: "Our favorite place" },
+      { src: "/gallery-6.jpg", caption: "Laughter and love" },
+      { src: "/gallery-1.jpg", caption: "Building our future" },
+      { src: "/gallery-2.jpg", caption: "Forever grateful" },
+    ],
+  },
+
   // Footer
   footer: {
     message: "Thank you for being part of our love story",
@@ -193,8 +210,9 @@ export const weddingConfig = {
   navigation: [
     { label: "Home", href: "#home" },
     { label: "Our Story", href: "#story" },
-    { label: "Events", href: "#events" },
     { label: "Gallery", href: "#gallery" },
+    { label: "Album", href: "#flipbook" },
+    { label: "Events", href: "#events" },
     { label: "RSVP", href: "#rsvp" },
     { label: "FAQ", href: "#faq" },
   ],

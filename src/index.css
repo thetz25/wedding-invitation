@@ -6,110 +6,110 @@
 
 @layer base {
   :root {
-    /* Luxurious Black & Teal Palette */
-    --background: 0 0% 5%;
-    --foreground: 180 20% 90%;
+    /* Soft Pastel Palette */
+    --background: 35 30% 97%;
+    --foreground: 280 15% 25%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 180 20% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 280 15% 25%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 180 20% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 15% 25%;
 
-    /* Rich Teal */
-    --primary: 180 70% 50%;
-    --primary-foreground: 0 0% 5%;
+    /* Pastel Pink */
+    --primary: 340 60% 80%;
+    --primary-foreground: 340 80% 25%;
 
-    /* Muted Teal */
-    --secondary: 180 40% 30%;
-    --secondary-foreground: 180 20% 90%;
+    /* Pastel Lavender */
+    --secondary: 280 45% 85%;
+    --secondary-foreground: 280 60% 30%;
 
-    /* Dark Muted */
-    --muted: 0 0% 12%;
-    --muted-foreground: 180 15% 60%;
+    /* Light Muted */
+    --muted: 35 20% 93%;
+    --muted-foreground: 280 10% 45%;
 
-    /* Accent Teal */
-    --accent: 175 75% 45%;
-    --accent-foreground: 0 0% 5%;
+    /* Pastel Peach */
+    --accent: 15 70% 85%;
+    --accent-foreground: 15 80% 30%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 180 20% 90%;
+    --destructive: 0 75% 70%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 180 25% 20%;
-    --input: 180 25% 20%;
-    --ring: 180 70% 50%;
+    --border: 280 15% 88%;
+    --input: 280 15% 88%;
+    --ring: 340 60% 80%;
 
     --radius: 0.5rem;
 
     /* Custom Wedding Colors */
-    --rose: 180 70% 50%;
-    --rose-light: 180 60% 70%;
-    --sage: 180 50% 35%;
-    --sage-light: 180 30% 25%;
-    --gold: 180 70% 50%;
-    --gold-light: 180 60% 70%;
-    --ivory: 180 20% 90%;
-    --charcoal: 0 0% 5%;
+    --rose: 340 60% 80%;
+    --rose-light: 340 50% 90%;
+    --sage: 150 35% 80%;
+    --sage-light: 150 30% 90%;
+    --gold: 15 70% 85%;
+    --gold-light: 15 60% 92%;
+    --ivory: 35 30% 97%;
+    --charcoal: 280 15% 25%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 5% / 0.1) 0%, hsl(0 0% 5% / 0.95) 100%);
-    --gradient-overlay: linear-gradient(180deg, hsl(0 0% 0% / 0.5) 0%, hsl(0 0% 0% / 0.8) 100%);
-    --gradient-rose: linear-gradient(135deg, hsl(180 70% 50%) 0%, hsl(175 75% 45%) 100%);
-    --gradient-sage: linear-gradient(135deg, hsl(180 50% 35%) 0%, hsl(180 60% 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(35 30% 97% / 0.3) 0%, hsl(35 30% 97% / 0.95) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(340 30% 95% / 0.5) 0%, hsl(340 30% 95% / 0.9) 100%);
+    --gradient-rose: linear-gradient(135deg, hsl(340 60% 80%) 0%, hsl(280 45% 85%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(150 35% 80%) 0%, hsl(180 40% 85%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(180 70% 50% / 0.15);
-    --shadow-medium: 0 8px 30px -8px hsl(180 70% 50% / 0.2);
-    --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.5);
+    --shadow-soft: 0 4px 20px -4px hsl(340 40% 70% / 0.2);
+    --shadow-medium: 0 8px 30px -8px hsl(340 40% 70% / 0.25);
+    --shadow-card: 0 2px 12px -2px hsl(280 20% 80% / 0.4);
 
     /* Sidebar */
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 180 20% 90%;
-    --sidebar-primary: 180 70% 50%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 180 50% 35%;
-    --sidebar-accent-foreground: 180 20% 90%;
-    --sidebar-border: 180 25% 20%;
-    --sidebar-ring: 180 70% 50%;
+    --sidebar-background: 35 30% 97%;
+    --sidebar-foreground: 280 15% 25%;
+    --sidebar-primary: 340 60% 80%;
+    --sidebar-primary-foreground: 340 80% 25%;
+    --sidebar-accent: 280 45% 85%;
+    --sidebar-accent-foreground: 280 60% 30%;
+    --sidebar-border: 280 15% 88%;
+    --sidebar-ring: 340 60% 80%;
   }
 
   .dark {
-    --background: 0 0% 3%;
-    --foreground: 180 20% 92%;
+    --background: 280 20% 15%;
+    --foreground: 340 20% 95%;
 
-    --card: 0 0% 6%;
-    --card-foreground: 180 20% 92%;
+    --card: 280 20% 18%;
+    --card-foreground: 340 20% 95%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 180 20% 92%;
+    --popover: 280 20% 18%;
+    --popover-foreground: 340 20% 95%;
 
-    --primary: 180 75% 55%;
-    --primary-foreground: 0 0% 3%;
+    --primary: 340 60% 75%;
+    --primary-foreground: 280 20% 15%;
 
-    --secondary: 180 40% 25%;
-    --secondary-foreground: 180 20% 92%;
+    --secondary: 280 45% 70%;
+    --secondary-foreground: 280 20% 15%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 180 15% 55%;
+    --muted: 280 15% 22%;
+    --muted-foreground: 280 10% 65%;
 
-    --accent: 175 80% 50%;
-    --accent-foreground: 0 0% 3%;
+    --accent: 15 65% 75%;
+    --accent-foreground: 280 20% 15%;
 
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 180 20% 92%;
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 180 25% 15%;
-    --input: 180 25% 15%;
-    --ring: 180 75% 55%;
+    --border: 280 15% 30%;
+    --input: 280 15% 30%;
+    --ring: 340 60% 75%;
 
-    --rose: 180 75% 55%;
-    --rose-light: 180 50% 35%;
-    --sage: 180 45% 30%;
-    --sage-light: 180 25% 20%;
-    --gold: 180 75% 55%;
-    --gold-light: 180 50% 35%;
-    --ivory: 180 20% 92%;
-    --charcoal: 0 0% 3%;
+    --rose: 340 60% 75%;
+    --rose-light: 340 45% 65%;
+    --sage: 150 35% 70%;
+    --sage-light: 150 25% 60%;
+    --gold: 15 65% 75%;
+    --gold-light: 15 50% 70%;
+    --ivory: 340 20% 95%;
+    --charcoal: 280 20% 15%;
   }
 }
 
@@ -204,6 +204,18 @@
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
+
+  .animate-flip-right {
+    animation: flipRight 0.6s ease-in-out;
+  }
+
+  .animate-flip-left {
+    animation: flipLeft 0.6s ease-in-out;
+  }
+
+  .perspective-\[2000px\] {
+    perspective: 2000px;
+  }
 }
 
 @keyframes fadeIn {
@@ -243,6 +255,38 @@
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes flipRight {
+  0% {
+    transform: rotateY(0deg);
+    transform-origin: left center;
+  }
+  50% {
+    transform: rotateY(-90deg);
+    transform-origin: left center;
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateY(0deg);
+    transform-origin: left center;
+  }
+}
+
+@keyframes flipLeft {
+  0% {
+    transform: rotateY(0deg);
+    transform-origin: right center;
+  }
+  50% {
+    transform: rotateY(90deg);
+    transform-origin: right center;
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateY(0deg);
+    transform-origin: right center;
   }
 }
 

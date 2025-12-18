@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/wedding/HeroSection";
 import { CountdownSection } from "@/components/wedding/CountdownSection";
 import { StorySection } from "@/components/wedding/StorySection";
 import { GallerySection } from "@/components/wedding/GallerySection";
+import { FlipbookGallery } from "@/components/wedding/FlipbookGallery";
 import { EventsSection } from "@/components/wedding/EventsSection";
 import { MapSection } from "@/components/wedding/MapSection";
 import { TimelineSection } from "@/components/wedding/TimelineSection";
@@ -32,6 +33,9 @@ const InvitationPage = () => {
 
       {/* Gallery / Prenup Photos */}
       <GallerySection />
+
+      {/* Flipbook Gallery */}
+      <FlipbookGallery />
 
       {/* Event Details */}
       <EventsSection />
